@@ -1,0 +1,158 @@
+/*import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+/* Overlay effect */
+
+.noise {
+    z-index: 1;
+}
+
+.fixed-fluid {    
+    top: 0;
+    left: 0;
+    opacity: .12;
+    width: 100%;    
+    height: 100%;
+    position: absolute;
+    pointer-events: none;    
+}
+
+.dot {
+   /* background: transparent url(../logo/dot.png) repeat 0 0;*/
+    top: 0;
+    left: 0;
+    margin: 0;
+    opacity: 5;
+    padding: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/* Content */
+
+html {
+    height: -webkit-fill-available;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Pre */
+
+#enter {    
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100vh;
+    cursor: pointer;
+    position: fixed;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+   /* background-image: url('https://static.wikia.nocookie.net/soundeffects/images/a/a1/Love_Live%21_Sunshine%21%21_S1_Ep._3_Anime_Mouse_Click_Sound_1.gif/revision/latest?cb=20190526124056');
+    /*bg.gif, 2.gif, */
+    /*object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;*/
+  /*
+    height: 100vh;
+      padding:0;
+      margin:0;
+  */
+      background-image:url('../a_data/lastnight.gif');
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+.begin {
+    top: 50%;
+    left: 50%;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* Post */
+
+#main {
+    z-index: 2;
+}
+
+#video {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-position: center center;
+  min-height: -webkit-fill-available;
+}
+
+.social img {
+  z-index: 2;
+  height: 50px;
+  color: #fff;
+  padding: 10px 15px;
+  flex-direction: row;
+}
+
+.social img:hover {
+    animation: pulse; /* referring to @keyframe declaration */
+    animation-duration: .4s; /* Duration */
+}
+
+.phone {
+  display: none;
+}
+
+
+/* Media queries */
+
+@media(max-width: 768px) {
+
+  /* #enter temp until vid works */
+  #enter {
+    display: none!important;
+  }
+
+  .pc {
+    display: none;
+  }
+
+  .phone {
+    display: block;
+  }
+
+  .social {
+    text-align: center;
+    padding: 20px 5px;
+    flex-direction: column;
+    background-position: center;
+  }
+
+  .social img {
+    padding: 20px 15px;
+  }
+
+  #video {
+    display: none!important;
+  }
+
+}
